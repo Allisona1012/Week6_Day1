@@ -3,8 +3,10 @@
 
 {% block content %}
     <h1>Add your Name Here</h1>
+    <h3> Lets keep in touch and stay friends!</h3>
     
-    <form action="">
+    <form action="" method='post'>
+        {{form.csrf_token}}
         <div class="form-group">
             <fieldset>
                 {{ form.full_name.label }}
