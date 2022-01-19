@@ -6,7 +6,7 @@ def index():
     my_name = 'allison'
     return render_template('index.html')
 
-@app.route('/name')
-def name():
+@app.route('/book')
+def book():
     my_name = 'allison'
-    return f'Hello {my_name}'
+    return render_template('book.html')
