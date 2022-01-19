@@ -1,15 +1,14 @@
 {% extends 'base.html' %}
-​
-{% block title %} Register {% endblock %}
-​
+{% block title %} Phonebook {% endblock %}
+
 {% block content %}
-    <h1>Register Here</h1>
+    <h1>Add your Name Here</h1>
     
     <form action="">
         <div class="form-group">
             <fieldset>
                 {{ form.full_name.label }}
-                {{ form.ful_name(class='form-control', placeholder='Full Name') }}
+                {{ form.full_name(class='form-control', placeholder='Full Name') }}
             </fieldset>
             <fieldset>
                 {{ form.email.label }}
